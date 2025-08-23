@@ -292,13 +292,13 @@ export default function Index() {
                       className="text-[10px] text-white font-bold"
                       style={{ marginTop: "-2px" }}
                     >
-                      40%
+                      <AnimatedCounter target={40} suffix="%" />
                     </div>
                     <div
                       className="text-[6px] text-white"
                       style={{ marginTop: "-2px" }}
                     >
-                      -95%
+                      <AnimatedCounter target={95} isPercentage={true} />
                     </div>
                   </div>
                   <img
@@ -317,17 +317,17 @@ export default function Index() {
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-cyan-400 rounded-sm"></div>
                     <span>Phishing</span>
-                    <span className="ml-auto">40%</span>
+                    <span className="ml-auto"><AnimatedCounter target={40} suffix="%" /></span>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-blue-400 rounded-sm"></div>
                     <span>Intrusion</span>
-                    <span className="ml-auto">18%</span>
+                    <span className="ml-auto"><AnimatedCounter target={18} suffix="%" /></span>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-purple-400 rounded-sm"></div>
                     <span>Other</span>
-                    <span className="ml-auto">13%</span>
+                    <span className="ml-auto"><AnimatedCounter target={13} suffix="%" /></span>
                   </div>
                 </div>
               </div>
