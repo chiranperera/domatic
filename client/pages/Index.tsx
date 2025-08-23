@@ -64,42 +64,42 @@ export default function Index() {
           </p>
 
           {/* Dashboard Analytics Section */}
-          <div className="relative w-full max-w-[830px] h-[484px] mt-16">
+          <div className="relative w-full max-w-[320px] sm:max-w-[600px] lg:max-w-[830px] h-[300px] sm:h-[400px] lg:h-[484px] mt-8 sm:mt-16">
             {/* World Map Background */}
-            <img 
+            <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/f45015bd3536b051326c84ad97176fa7094d5437?width=1714"
               alt="World Map"
               className="absolute inset-0 w-full h-full object-contain"
             />
 
             {/* Cortex AI Threat Detection Label */}
-            <div className="absolute top-[34px] left-1/2 transform -translate-x-1/2 flex items-center gap-3">
-              <img 
+            <div className="absolute top-4 sm:top-[34px] left-1/2 transform -translate-x-1/2 flex items-center gap-2 sm:gap-3">
+              <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/b21fcdd6ef336cc07e948e9cb62a44de738ba8f1?width=78"
                 alt="Play button"
-                className="w-10 h-10 rounded-full"
+                className="w-8 h-8 sm:w-10 sm:h-10 rounded-full"
               />
-              <span className="text-[16px] text-gray-400 font-inter">Cortex AI Threat Detection</span>
+              <span className="text-[12px] sm:text-[16px] text-gray-400 font-inter">Cortex AI Threat Detection</span>
             </div>
 
             {/* Statistics Cards */}
-            <div className="absolute bottom-[92px] left-0 flex items-end gap-4">
+            <div className="absolute bottom-16 sm:bottom-[92px] left-0 flex flex-col sm:flex-row items-start sm:items-end gap-2 sm:gap-4">
               {/* Detected Threats */}
-              <div className="bg-cyber-darker/80 border border-gray-800 rounded-sm p-4 min-w-[110px]">
-                <div className="text-[23px] font-normal text-white font-dm-sans mb-1">13,274</div>
-                <div className="text-[11px] text-gray-400 font-dm-sans">Detected Threats</div>
+              <div className="bg-cyber-darker/80 border border-gray-800 rounded-sm p-2 sm:p-4 min-w-[90px] sm:min-w-[110px]">
+                <div className="text-[18px] sm:text-[23px] font-normal text-white font-dm-sans mb-1">13,274</div>
+                <div className="text-[9px] sm:text-[11px] text-gray-400 font-dm-sans">Detected Threats</div>
               </div>
 
               {/* Threats Blocked */}
-              <div className="bg-cyber-darker/80 border border-gray-800 rounded-sm p-4 min-w-[104px]">
-                <div className="text-[24px] font-normal text-white font-dm-sans mb-1">643</div>
-                <div className="text-[11px] text-gray-400 font-dm-sans">Threats Blocked</div>
+              <div className="bg-cyber-darker/80 border border-gray-800 rounded-sm p-2 sm:p-4 min-w-[80px] sm:min-w-[104px]">
+                <div className="text-[18px] sm:text-[24px] font-normal text-white font-dm-sans mb-1">643</div>
+                <div className="text-[9px] sm:text-[11px] text-gray-400 font-dm-sans">Threats Blocked</div>
               </div>
 
               {/* Average Response Time */}
               <div className="text-left">
-                <div className="text-[23px] font-normal text-white font-dm-sans mb-1">5 min</div>
-                <div className="text-[11px] text-gray-400 font-dm-sans">Average Response Time</div>
+                <div className="text-[18px] sm:text-[23px] font-normal text-white font-dm-sans mb-1">5 min</div>
+                <div className="text-[9px] sm:text-[11px] text-gray-400 font-dm-sans">Average Response Time</div>
               </div>
             </div>
 
