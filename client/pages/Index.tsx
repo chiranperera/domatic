@@ -57,7 +57,7 @@ export default function Index() {
           <div className="cyber-data-stream"></div>
           <div className="cyber-data-stream"></div>
           <div className="cyber-data-stream"></div>
-          <h1 className="text-white mb-4" style={{font: "700 75px/94px DM Sans, sans-serif"}}>
+          <h1 className="text-white mb-4 animated-glow" style={{font: "700 75px/94px DM Sans, sans-serif"}}>
             Mission Possible
           </h1>
           <h2 className="text-white mb-8" style={{font: "400 27px/40.5px DM Sans, sans-serif"}}>
