@@ -85,28 +85,40 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Inter', 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-family:
+      "Inter",
+      "DM Sans",
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      sans-serif;
   }
 }
 
 /* Custom gradient backgrounds for cyber aesthetic */
 .cyber-gradient {
-  background: linear-gradient(180deg,
+  background: linear-gradient(
+    180deg,
     hsl(222, 84%, 5%) 0%,
-    hsl(220, 91%, 2%) 100%);
+    hsl(220, 91%, 2%) 100%
+  );
 }
 
 .aurora-gradient {
-  background: radial-gradient(ellipse at center,
+  background: radial-gradient(
+    ellipse at center,
     hsla(199, 89%, 48%, 0.3) 0%,
     hsla(180, 100%, 50%, 0.2) 30%,
     hsla(220, 91%, 2%, 0.8) 70%,
-    hsl(222, 84%, 5%) 100%);
+    hsl(222, 84%, 5%) 100%
+  );
 }
 
 /* Cyber animation effects */
 @keyframes cyberPulse {
-  0%, 100% {
+  0%,
+  100% {
     box-shadow:
       0 0 20px hsla(199, 89%, 48%, 0.3),
       inset 0 0 20px hsla(199, 89%, 48%, 0.1);
@@ -142,7 +154,8 @@
 }
 
 @keyframes glowPulse {
-  0%, 100% {
+  0%,
+  100% {
     filter: brightness(1) drop-shadow(0 0 10px hsla(199, 89%, 48%, 0.4));
   }
   50% {
@@ -156,15 +169,25 @@
 }
 
 .cyber-hero-animated::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background:
-    linear-gradient(45deg, transparent 30%, hsla(199, 89%, 48%, 0.1) 50%, transparent 70%),
-    linear-gradient(-45deg, transparent 30%, hsla(180, 100%, 50%, 0.1) 50%, transparent 70%);
+    linear-gradient(
+      45deg,
+      transparent 30%,
+      hsla(199, 89%, 48%, 0.1) 50%,
+      transparent 70%
+    ),
+    linear-gradient(
+      -45deg,
+      transparent 30%,
+      hsla(180, 100%, 50%, 0.1) 50%,
+      transparent 70%
+    );
   background-size: 200% 200%;
   animation: cyberScan 8s linear infinite;
   pointer-events: none;
@@ -172,16 +195,28 @@
 }
 
 .cyber-hero-animated::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background:
-    radial-gradient(circle at 20% 30%, hsla(199, 89%, 48%, 0.15) 0%, transparent 50%),
-    radial-gradient(circle at 80% 70%, hsla(180, 100%, 50%, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 60% 20%, hsla(199, 89%, 48%, 0.08) 0%, transparent 50%);
+    radial-gradient(
+      circle at 20% 30%,
+      hsla(199, 89%, 48%, 0.15) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 70%,
+      hsla(180, 100%, 50%, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 60% 20%,
+      hsla(199, 89%, 48%, 0.08) 0%,
+      transparent 50%
+    );
   animation: cyberPulse 6s ease-in-out infinite;
   pointer-events: none;
   z-index: 1;
@@ -191,10 +226,12 @@
   position: absolute;
   width: 2px;
   height: 100%;
-  background: linear-gradient(to bottom,
+  background: linear-gradient(
+    to bottom,
     transparent 0%,
     hsla(199, 89%, 48%, 0.8) 50%,
-    transparent 100%);
+    transparent 100%
+  );
   animation: dataFlow 4s linear infinite;
 }
 
