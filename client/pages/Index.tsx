@@ -355,7 +355,7 @@ export default function Index() {
       </div>
 
       {/* Trusted By Section */}
-      <div className="w-full pb-[180px] bg-cyber-darker">
+      <div className="w-full pb-[100px] bg-cyber-darker">
         <div className="w-full text-center px-4">
           <div className="text-[12px] sm:text-[14px] text-white font-dm-sans font-bold mb-[34px]">
             Trusted By
