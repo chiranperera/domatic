@@ -92,14 +92,6 @@ export default function Index() {
         {/* Aurora Background */}
         <div className="absolute inset-0 aurora-gradient"></div>
 
-        {/* Background Images */}
-        <div className="absolute inset-0 w-full h-full">
-          <img
-            src="https://api.builder.io/api/v1/image/assets/TEMP/88af472420c530eb0c69ff0be97de82f01ce72a6?width=2880"
-            alt="Background"
-            className="w-full h-full object-cover opacity-80 mt-[134px]"
-          />
-        </div>
 
         {/* Hero Content */}
         <div
@@ -355,7 +347,15 @@ export default function Index() {
       </div>
 
       {/* Trusted By Section */}
-      <div className="w-full pb-[100px] bg-cyber-darker -mt-px">
+      <div
+        className="w-full pb-[100px] -mt-px relative"
+        style={{
+          backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2Ff16ee0a559e542848f50f86238f3368e%2F5402c346daf04fd281952ed1445336b5?format=webp&width=800)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
         <div className="w-full text-center px-4">
           <div className="text-[12px] sm:text-[14px] text-white font-dm-sans font-bold mb-[34px]">
             Trusted By
