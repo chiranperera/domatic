@@ -50,7 +50,7 @@ export default function Index() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 flex flex-col items-center text-center pt-8 sm:pt-[42px] px-4 sm:px-6">
+        <div className="relative z-10 flex flex-col items-center text-center pt-[42px] px-6" style={{backgroundImage: "url(https://cdn.builder.io/api/v1/image/assets%2Fdd067d1a18d54c45bde7470fb8926721%2Fd9c30919b837408c9522f7c8fd31b486)", backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: "cover"}}>
           <h1 className="text-white mb-4" style={{font: "700 75px/94px DM Sans, sans-serif"}}>
             Mission Possible
           </h1>
@@ -70,17 +70,17 @@ export default function Index() {
               src="https://api.builder.io/api/v1/image/assets/TEMP/f45015bd3536b051326c84ad97176fa7094d5437?width=1714"
               alt="World Map"
               className="absolute w-full h-full object-contain"
-              style={{top: "-13px", bottom: "0px", left: "0px", right: "0px"}}
+              style={{top: "1px", bottom: "0px", left: "0px", right: "0px"}}
             />
 
             {/* Cortex AI Threat Detection Label */}
-            <div className="absolute flex flex-col justify-start gap-3" style={{top: "24px", left: "0px", width: "720px", margin: "0 0 auto 189px"}}>
+            <div className="absolute flex flex-col justify-start gap-3" style={{top: "46px", left: "0px", width: "720px", margin: "0 0 auto 52px"}}>
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/b21fcdd6ef336cc07e948e9cb62a44de738ba8f1?width=78"
                 alt="Play button"
                 className="w-10 h-10 rounded-full ml-auto"
               />
-              <span className="text-white font-medium text-left" style={{fontFamily: "DM Sans, sans-serif", marginTop: "-39px"}}>Cortex AI Threat Detection</span>
+              <span className="text-white font-medium text-left" style={{fontFamily: '"DM Sans", sans-serif', marginTop: "-39px"}}>Cortex AI Threat Detection</span>
             </div>
 
             {/* Statistics Cards */}
