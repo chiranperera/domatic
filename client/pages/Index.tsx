@@ -104,16 +104,16 @@ export default function Index() {
             </div>
 
             {/* Charts and Analytics */}
-            <div className="absolute bottom-[92px] right-0 flex gap-4">
+            <div className="absolute bottom-16 sm:bottom-[92px] right-0 hidden lg:flex gap-4">
               {/* Threat Activity Chart */}
               <div className="bg-cyber-darker/80 border border-gray-800 rounded-sm p-3 w-[135px] h-[156px]">
                 <div className="text-[8px] text-white font-dm-sans font-bold mb-3">Threat Activity</div>
-                <img 
+                <img
                   src="https://api.builder.io/api/v1/image/assets/TEMP/ed22609638b1e18f39055b5537015f063c874b39?width=230"
                   alt="Threat Activity Chart"
                   className="w-full h-8 mb-6"
                 />
-                
+
                 {/* Legend */}
                 <div className="space-y-2 text-[8px] text-white">
                   <div className="flex items-center gap-2">
@@ -143,7 +143,7 @@ export default function Index() {
               <div className="bg-cyber-darker/80 border border-gray-800 rounded-sm p-3 w-[103px] h-[156px]">
                 <div className="text-[8px] text-white font-dm-sans font-bold mb-3">Threat Types</div>
                 <div className="relative w-[74px] h-[75px] mx-auto mb-4">
-                  <img 
+                  <img
                     src="https://api.builder.io/api/v1/image/assets/TEMP/9b21dbf0913426e72d1a343d7bbfc3c6978f114b?width=148"
                     alt="Threat Types Donut Chart"
                     className="w-full h-full"
@@ -153,7 +153,7 @@ export default function Index() {
                     <div className="text-[6px] text-white font-dm-sans">-95%</div>
                   </div>
                 </div>
-                
+
                 {/* Legend */}
                 <div className="space-y-1 text-[7px] text-white">
                   <div className="flex items-center gap-2">
