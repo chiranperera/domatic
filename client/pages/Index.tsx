@@ -50,7 +50,13 @@ export default function Index() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 flex flex-col items-center text-center pt-[42px] px-6" style={{backgroundImage: "url(https://cdn.builder.io/api/v1/image/assets%2Fdd067d1a18d54c45bde7470fb8926721%2Fd9c30919b837408c9522f7c8fd31b486)", backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: "cover"}}>
+        <div className="relative z-10 flex flex-col items-center text-center pt-[42px] px-6 cyber-hero-animated" style={{backgroundImage: "url(https://cdn.builder.io/api/v1/image/assets%2Fdd067d1a18d54c45bde7470fb8926721%2Fd9c30919b837408c9522f7c8fd31b486)", backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundSize: "cover"}}>
+
+          {/* Animated Data Streams */}
+          <div className="cyber-data-stream"></div>
+          <div className="cyber-data-stream"></div>
+          <div className="cyber-data-stream"></div>
+          <div className="cyber-data-stream"></div>
           <h1 className="text-white mb-4" style={{font: "700 75px/94px DM Sans, sans-serif"}}>
             Mission Possible
           </h1>
