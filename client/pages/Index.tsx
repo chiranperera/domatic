@@ -252,22 +252,22 @@ export default function Index() {
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-cyan-400 rounded-sm"></div>
                     <span>Phishing</span>
-                    <span className="ml-auto">40%</span>
+                    <span className="ml-auto"><AnimatedCounter target={40} suffix="%" /></span>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-blue-400 rounded-sm"></div>
                     <span>Malware</span>
-                    <span className="ml-auto">27%</span>
+                    <span className="ml-auto"><AnimatedCounter target={27} suffix="%" /></span>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-green-400 rounded-sm"></div>
                     <span>Intrusion</span>
-                    <span className="ml-auto">18%</span>
+                    <span className="ml-auto"><AnimatedCounter target={18} suffix="%" /></span>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-purple-400 rounded-sm"></div>
                     <span>Other</span>
-                    <span className="ml-auto">18%</span>
+                    <span className="ml-auto"><AnimatedCounter target={18} suffix="%" /></span>
                   </div>
                 </div>
               </div>
