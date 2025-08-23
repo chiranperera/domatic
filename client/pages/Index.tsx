@@ -191,7 +191,7 @@ export default function Index() {
                 }}
               >
                 <div className="text-[23px] font-normal text-white mb-1 text-left">
-                  13,274
+                  <AnimatedCounter target={13274} separator="," />
                 </div>
                 <div className="text-[11px] text-gray-400 text-left">
                   Detected Threats
@@ -204,7 +204,7 @@ export default function Index() {
                 style={{ border: "1px none rgb(31, 41, 55)" }}
               >
                 <div className="text-[24px] font-normal text-white mb-1 text-left">
-                  643
+                  <AnimatedCounter target={643} />
                 </div>
                 <div className="text-[11px] text-gray-400 text-left">
                   Threats Blocked
@@ -217,7 +217,7 @@ export default function Index() {
                   className="text-[23px] font-normal text-white"
                   style={{ paddingBottom: "3px" }}
                 >
-                  5 min
+                  <AnimatedCounter target={5} suffix=" min" />
                 </div>
                 <div
                   className="text-[11px] text-gray-400"
