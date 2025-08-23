@@ -4,11 +4,11 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-cyber-dark text-white overflow-x-hidden">
       {/* Navigation Header */}
-      <nav className="relative z-50 w-full h-[89px] flex items-center justify-between px-6 lg:px-[100px]">
+      <nav className="relative z-50 w-full h-[89px] flex items-center justify-between px-4 sm:px-6 lg:px-[100px]">
         {/* Logo */}
-        <div className="flex items-center gap-3">
-          <div className="w-2 h-5 bg-white"></div>
-          <span className="text-[42px] font-bold text-white font-inter">domatic</span>
+        <div className="flex items-center gap-2 sm:gap-3">
+          <div className="w-2 h-4 sm:h-5 bg-white"></div>
+          <span className="text-[28px] sm:text-[36px] lg:text-[42px] font-bold text-white font-inter">domatic</span>
         </div>
 
         {/* Navigation Links */}
@@ -20,8 +20,17 @@ export default function Index() {
           <a href="#" className="text-white font-bold text-[15px] font-dm-sans hover:text-cyber-blue transition-colors">Contact</a>
         </div>
 
+        {/* Mobile Menu Button */}
+        <div className="lg:hidden">
+          <button className="text-white p-2">
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+
         {/* Sign In Button */}
-        <Button className="bg-white text-black font-bold text-[14px] px-6 py-3 rounded-[18px] h-[38px] hover:bg-gray-100 transition-colors">
+        <Button className="hidden lg:block bg-white text-black font-bold text-[14px] px-6 py-3 rounded-[18px] h-[38px] hover:bg-gray-100 transition-colors">
           Sign In
         </Button>
       </nav>
