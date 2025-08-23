@@ -103,7 +103,7 @@ export default function Index() {
 
         {/* Hero Content */}
         <div
-          className="relative z-10 flex flex-col items-center text-center pt-[42px] px-6 cyber-hero-animated"
+          className="relative z-10 flex flex-col items-center text-center pt-[160px] px-6 cyber-hero-animated"
           style={{
             backgroundImage:
               "url(https://cdn.builder.io/api/v1/image/assets%2Fdd067d1a18d54c45bde7470fb8926721%2Fd9c30919b837408c9522f7c8fd31b486)",
