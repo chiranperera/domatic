@@ -97,7 +97,7 @@ export default function Index() {
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/88af472420c530eb0c69ff0be97de82f01ce72a6?width=2880"
             alt="Background"
-            className="w-full h-full object-cover opacity-80"
+            className="w-full h-full object-cover opacity-80 mt-[134px]"
           />
         </div>
 
@@ -355,9 +355,9 @@ export default function Index() {
       </div>
 
       {/* Trusted By Section */}
-      <div className="w-full py-16 sm:py-20 bg-cyber-darker">
+      <div className="w-full pb-[180px] bg-cyber-darker">
         <div className="w-full text-center px-4">
-          <div className="text-[12px] sm:text-[14px] text-white font-dm-sans font-bold mb-6 sm:mb-8">
+          <div className="text-[12px] sm:text-[14px] text-white font-dm-sans font-bold mb-[34px]">
             Trusted By
           </div>
 
