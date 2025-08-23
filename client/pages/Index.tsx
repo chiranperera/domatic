@@ -36,28 +36,28 @@ export default function Index() {
       </nav>
 
       {/* Hero Section with Background */}
-      <div className="relative w-full h-[1075px] overflow-hidden">
+      <div className="relative w-full min-h-[600px] sm:min-h-[800px] lg:h-[1075px] overflow-hidden">
         {/* Aurora Background */}
         <div className="absolute inset-0 aurora-gradient"></div>
-        
+
         {/* Background Images */}
         <div className="absolute inset-0 w-full h-full">
-          <img 
-            src="https://api.builder.io/api/v1/image/assets/TEMP/88af472420c530eb0c69ff0be97de82f01ce72a6?width=2880" 
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/88af472420c530eb0c69ff0be97de82f01ce72a6?width=2880"
             alt="Background"
             className="w-full h-full object-cover opacity-80"
           />
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 flex flex-col items-center text-center pt-[42px] px-6">
-          <h1 className="text-[75px] font-bold text-white font-dm-sans leading-[75px] mb-4">
+        <div className="relative z-10 flex flex-col items-center text-center pt-8 sm:pt-[42px] px-4 sm:px-6">
+          <h1 className="text-[36px] sm:text-[50px] lg:text-[75px] font-bold text-white font-dm-sans leading-tight mb-2 sm:mb-4">
             Mission Possible
           </h1>
-          <h2 className="text-[27px] font-normal text-white font-dm-sans mb-8">
+          <h2 className="text-[18px] sm:text-[22px] lg:text-[27px] font-normal text-white font-dm-sans mb-4 sm:mb-8">
             Build, Deploy, Defend.
           </h2>
-          <p className="text-[16px] font-normal text-white font-lexend max-w-[545px] leading-[24.6px] text-center mb-16">
+          <p className="text-[14px] sm:text-[16px] font-normal text-white font-lexend max-w-[320px] sm:max-w-[500px] lg:max-w-[545px] leading-relaxed text-center mb-8 sm:mb-16">
             Trusted by ISPs and enterprises to develop reliable integrations,
             deploy high-availability hosting, and defend with scalable
             cybersecurity solutions.
