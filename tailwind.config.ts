@@ -57,6 +57,15 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Custom cybersecurity theme colors
+        cyber: {
+          blue: "hsl(var(--cyber-blue))",
+          dark: "hsl(var(--cyber-dark))",
+          darker: "hsl(var(--cyber-darker))",
+          gray: "hsl(var(--cyber-gray))",
+          "light-gray": "hsl(var(--cyber-light-gray))",
+          accent: "hsl(var(--cyber-accent))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
