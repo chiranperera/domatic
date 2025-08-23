@@ -356,7 +356,7 @@ export default function Index() {
           backgroundRepeat: 'no-repeat'
         }}
       >
-        <div className="w-full text-center px-4">
+        <div className="w-full text-center -mt-[111px] pt-16 px-4">
           <div className="text-[12px] sm:text-[14px] text-white font-dm-sans font-bold mb-[34px]">
             Trusted By
           </div>
