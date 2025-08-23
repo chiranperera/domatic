@@ -8,16 +8,16 @@ export default function Index() {
         {/* Logo */}
         <div className="flex items-center gap-2 sm:gap-3">
           <div className="w-2 h-4 sm:h-5 bg-white"></div>
-          <span className="text-[28px] sm:text-[36px] lg:text-[42px] font-bold text-white font-inter">domatic</span>
+          <span className="text-[42px] font-bold text-white" style={{font: "700 42px/63px DM Sans, sans-serif"}}>domatic</span>
         </div>
 
         {/* Navigation Links */}
-        <div className="hidden lg:flex items-center gap-8">
-          <a href="#" className="text-cyber-blue font-bold text-[15px] font-dm-sans">Services</a>
-          <a href="#" className="text-white font-bold text-[15px] font-dm-sans hover:text-cyber-blue transition-colors">Sectors</a>
-          <a href="#" className="text-white font-bold text-[15px] font-dm-sans hover:text-cyber-blue transition-colors">Insights</a>
-          <a href="#" className="text-white font-bold text-[15px] font-dm-sans hover:text-cyber-blue transition-colors">About</a>
-          <a href="#" className="text-white font-bold text-[15px] font-dm-sans hover:text-cyber-blue transition-colors">Contact</a>
+        <div className="hidden lg:flex items-center gap-8" style={{font: "400 11px DM Sans, sans-serif"}}>
+          <a href="#" className="text-cyber-blue text-[17px] font-medium hover:text-cyber-blue transition-colors">Services</a>
+          <a href="#" className="text-white text-[17px] font-medium hover:text-cyber-blue transition-colors">Sectors</a>
+          <a href="#" className="text-white text-[17px] font-medium hover:text-cyber-blue transition-colors">Insights</a>
+          <a href="#" className="text-white text-[17px] font-medium hover:text-cyber-blue transition-colors">About</a>
+          <a href="#" className="text-white text-[17px] font-medium hover:text-cyber-blue transition-colors">Contact</a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -30,7 +30,7 @@ export default function Index() {
         </div>
 
         {/* Sign In Button */}
-        <Button className="hidden lg:block bg-white text-black font-bold text-[14px] px-6 py-3 rounded-[18px] h-[38px] hover:bg-gray-100 transition-colors">
+        <Button className="hidden lg:block bg-white text-black h-[38px] hover:bg-gray-100 transition-colors" style={{borderRadius: "62px", width: "99.4px", padding: "12px 24px 32px", font: "700 17px/21px DM Sans, sans-serif"}}>
           Sign In
         </Button>
       </nav>
@@ -51,60 +51,61 @@ export default function Index() {
 
         {/* Hero Content */}
         <div className="relative z-10 flex flex-col items-center text-center pt-8 sm:pt-[42px] px-4 sm:px-6">
-          <h1 className="text-[36px] sm:text-[50px] lg:text-[75px] font-bold text-white font-dm-sans leading-tight mb-2 sm:mb-4">
+          <h1 className="text-white mb-4" style={{font: "700 75px/94px DM Sans, sans-serif"}}>
             Mission Possible
           </h1>
-          <h2 className="text-[18px] sm:text-[22px] lg:text-[27px] font-normal text-white font-dm-sans mb-4 sm:mb-8">
+          <h2 className="text-white mb-8" style={{font: "400 27px/40.5px DM Sans, sans-serif"}}>
             Build, Deploy, Defend.
           </h2>
-          <p className="text-[14px] sm:text-[16px] font-normal text-white font-lexend max-w-[320px] sm:max-w-[500px] lg:max-w-[545px] leading-relaxed text-center mb-8 sm:mb-16">
+          <p className="text-white max-w-[545px] text-center mb-16" style={{font: "400 17px/26px DM Sans, sans-serif"}}>
             Trusted by ISPs and enterprises to develop reliable integrations,
             deploy high-availability hosting, and defend with scalable
             cybersecurity solutions.
           </p>
 
           {/* Dashboard Analytics Section */}
-          <div className="relative w-full max-w-[320px] sm:max-w-[600px] lg:max-w-[830px] h-[300px] sm:h-[400px] lg:h-[484px] mt-8 sm:mt-16">
+          <div className="relative w-full max-w-[830px] h-[484px] flex flex-col justify-start items-center" style={{marginTop: "-4px"}}>
             {/* World Map Background */}
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/f45015bd3536b051326c84ad97176fa7094d5437?width=1714"
               alt="World Map"
-              className="absolute inset-0 w-full h-full object-contain"
+              className="absolute w-full h-full object-contain"
+              style={{top: "-13px", bottom: "0px", left: "0px", right: "0px"}}
             />
 
             {/* Cortex AI Threat Detection Label */}
-            <div className="absolute top-4 sm:top-[34px] left-1/2 transform -translate-x-1/2 flex items-center gap-2 sm:gap-3">
+            <div className="absolute flex flex-col justify-start gap-3" style={{top: "24px", left: "0px", width: "720px", margin: "0 0 auto 189px"}}>
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/b21fcdd6ef336cc07e948e9cb62a44de738ba8f1?width=78"
                 alt="Play button"
-                className="w-8 h-8 sm:w-10 sm:h-10 rounded-full"
+                className="w-10 h-10 rounded-full ml-auto"
               />
-              <span className="text-[12px] sm:text-[16px] text-gray-400 font-inter">Cortex AI Threat Detection</span>
+              <span className="text-white font-medium text-left" style={{fontFamily: "DM Sans, sans-serif", marginTop: "-39px"}}>Cortex AI Threat Detection</span>
             </div>
 
             {/* Statistics Cards */}
-            <div className="absolute bottom-16 sm:bottom-[92px] left-0 flex flex-col sm:flex-row items-start sm:items-end gap-2 sm:gap-4">
+            <div className="absolute bottom-[92px] left-0 flex items-end gap-4" style={{marginLeft: "58px"}}>
               {/* Detected Threats */}
-              <div className="bg-cyber-darker/80 border border-gray-800 rounded-sm p-2 sm:p-4 min-w-[90px] sm:min-w-[110px]">
-                <div className="text-[18px] sm:text-[23px] font-normal text-white font-dm-sans mb-1">13,274</div>
-                <div className="text-[9px] sm:text-[11px] text-gray-400 font-dm-sans">Detected Threats</div>
+              <div className="rounded-sm p-4 min-w-[110px]" style={{marginLeft: "3px", border: "1px none rgb(31, 41, 55)"}}>
+                <div className="text-[23px] font-normal text-white mb-1 text-left">13,274</div>
+                <div className="text-[11px] text-gray-400 text-left">Detected Threats</div>
               </div>
 
               {/* Threats Blocked */}
-              <div className="bg-cyber-darker/80 border border-gray-800 rounded-sm p-2 sm:p-4 min-w-[80px] sm:min-w-[104px]">
-                <div className="text-[18px] sm:text-[24px] font-normal text-white font-dm-sans mb-1">643</div>
-                <div className="text-[9px] sm:text-[11px] text-gray-400 font-dm-sans">Threats Blocked</div>
+              <div className="rounded-sm p-4 min-w-[104px]" style={{border: "1px none rgb(31, 41, 55)"}}>
+                <div className="text-[24px] font-normal text-white mb-1 text-left">643</div>
+                <div className="text-[11px] text-gray-400 text-left">Threats Blocked</div>
               </div>
 
               {/* Average Response Time */}
               <div className="text-left">
-                <div className="text-[18px] sm:text-[23px] font-normal text-white font-dm-sans mb-1">5 min</div>
-                <div className="text-[9px] sm:text-[11px] text-gray-400 font-dm-sans">Average Response Time</div>
+                <div className="text-[23px] font-normal text-white" style={{paddingBottom: "3px"}}>5 min</div>
+                <div className="text-[11px] text-gray-400" style={{paddingBottom: "17px"}}>Average Response Time</div>
               </div>
             </div>
 
             {/* Charts and Analytics */}
-            <div className="absolute bottom-16 sm:bottom-[92px] right-0 hidden lg:flex gap-4">
+            <div className="absolute bottom-[92px] right-0 flex gap-4" style={{margin: "0 90px -67px 0"}}>
               {/* Threat Activity Chart */}
               <div className="bg-cyber-darker/80 border border-gray-800 rounded-sm p-3 w-[135px] h-[156px]">
                 <div className="text-[8px] text-white font-dm-sans font-bold mb-3">Threat Activity</div>
@@ -115,7 +116,7 @@ export default function Index() {
                 />
 
                 {/* Legend */}
-                <div className="space-y-2 text-[8px] text-white">
+                <div className="space-y-2 text-[8px] text-white" style={{marginTop: "-20px"}}>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-cyan-400 rounded-sm"></div>
                     <span>Phishing</span>
@@ -143,19 +144,20 @@ export default function Index() {
               <div className="bg-cyber-darker/80 border border-gray-800 rounded-sm p-3 w-[103px] h-[156px]">
                 <div className="text-[8px] text-white font-dm-sans font-bold mb-3">Threat Types</div>
                 <div className="relative w-[74px] h-[75px] mx-auto mb-4">
+                  <div className="absolute flex flex-col items-center justify-center" style={{top: "2px", bottom: "0px", left: "0px", right: "0px", marginTop: "-1px"}}>
+                    <div className="text-[10px] text-white font-bold" style={{marginTop: "-2px"}}>40%</div>
+                    <div className="text-[6px] text-white" style={{marginTop: "-2px"}}>-95%</div>
+                  </div>
                   <img
                     src="https://api.builder.io/api/v1/image/assets/TEMP/9b21dbf0913426e72d1a343d7bbfc3c6978f114b?width=148"
                     alt="Threat Types Donut Chart"
                     className="w-full h-full"
+                    style={{marginTop: "-8px"}}
                   />
-                  <div className="absolute inset-0 flex flex-col items-center justify-center">
-                    <div className="text-[10px] text-white font-dm-sans font-bold">40%</div>
-                    <div className="text-[6px] text-white font-dm-sans">-95%</div>
-                  </div>
                 </div>
 
                 {/* Legend */}
-                <div className="space-y-1 text-[7px] text-white">
+                <div className="space-y-1 text-[7px] text-white" style={{marginTop: "-11px"}}>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-cyan-400 rounded-sm"></div>
                     <span>Phishing</span>
@@ -176,12 +178,12 @@ export default function Index() {
             </div>
 
             {/* Time Series Chart */}
-            <div className="absolute bottom-32 sm:bottom-[184px] left-4 sm:left-[104px] w-[280px] sm:w-[380px] h-[50px] sm:h-[74px] hidden sm:block">
-              <div className="bg-cyber-darker/80 border-2 border-gray-800 rounded-sm p-2 sm:p-3 w-full h-full">
+            <div className="absolute bottom-[184px] left-[104px] w-[380px] h-[74px]">
+              <div className="bg-cyber-darker/80 rounded-sm w-full h-full p-3" style={{margin: "159px 0 0 -27px", border: "1px solid rgb(31, 41, 55)"}}>
                 <img
                   src="https://api.builder.io/api/v1/image/assets/TEMP/aa553e8afbbc38d62d5c1d28b8f94ed7027b45f8?width=680"
                   alt="Time Series Chart"
-                  className="w-full h-6 sm:h-10 rounded"
+                  className="w-full h-10 rounded"
                 />
               </div>
             </div>
@@ -211,7 +213,7 @@ export default function Index() {
                   alt="Broadpeak logo"
                   className="w-[120px] h-[36px] sm:w-[150px] sm:h-[46px] lg:w-[169px] lg:h-[51px]"
                 />
-                <span className="text-[18px] sm:text-[24px] lg:text-[29px] text-gray-300 font-inter mt-1">broadpeak</span>
+                <span className="text-[29px] text-gray-300 font-inter" style={{marginTop: "-35px"}}>broadpeak</span>
               </div>
 
               {/* Ruckus */}
