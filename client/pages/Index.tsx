@@ -352,62 +352,63 @@ export default function Index() {
           </div>
         </div>
 
-        {/* Trusted By Section */}
-        <div className="absolute bottom-0 w-full h-[180px] sm:h-[220px] bg-gradient-to-t from-cyber-darker to-transparent">
-          <div className="absolute bottom-6 sm:bottom-[49px] w-full text-center px-4">
-            <div className="text-[12px] sm:text-[14px] text-white font-dm-sans font-bold mb-6 sm:mb-8">
-              Trusted By
+      </div>
+
+      {/* Trusted By Section */}
+      <div className="w-full py-16 sm:py-20 bg-cyber-darker">
+        <div className="w-full text-center px-4">
+          <div className="text-[12px] sm:text-[14px] text-white font-dm-sans font-bold mb-6 sm:mb-8">
+            Trusted By
+          </div>
+
+          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-8 lg:gap-12 xl:gap-16">
+            {/* Sonar */}
+            <div className="flex items-center gap-2 sm:gap-3">
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/616fb4e9dc800aafa351522aa8317b12f159e2e5?width=70"
+                alt="Sonar logo"
+                className="w-6 h-6 sm:w-9 sm:h-9"
+              />
+              <span className="text-[20px] sm:text-[28px] lg:text-[33px] text-gray-300 font-inter">
+                sonar
+              </span>
             </div>
 
-            <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-8 lg:gap-12 xl:gap-16">
-              {/* Sonar */}
-              <div className="flex items-center gap-2 sm:gap-3">
-                <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/616fb4e9dc800aafa351522aa8317b12f159e2e5?width=70"
-                  alt="Sonar logo"
-                  className="w-6 h-6 sm:w-9 sm:h-9"
-                />
-                <span className="text-[20px] sm:text-[28px] lg:text-[33px] text-gray-300 font-inter">
-                  sonar
-                </span>
-              </div>
+            {/* Broadpeak */}
+            <div className="flex flex-col items-center">
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/206c1eb4bf0d80bfe800003ca50bc369893d03bf?width=338"
+                alt="Broadpeak logo"
+                className="w-[120px] h-[36px] sm:w-[150px] sm:h-[46px] lg:w-[169px] lg:h-[51px]"
+              />
+              <span
+                className="text-[29px] text-gray-300 font-inter"
+                style={{ marginTop: "-35px" }}
+              >
+                broadpeak
+              </span>
+            </div>
 
-              {/* Broadpeak */}
-              <div className="flex flex-col items-center">
-                <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/206c1eb4bf0d80bfe800003ca50bc369893d03bf?width=338"
-                  alt="Broadpeak logo"
-                  className="w-[120px] h-[36px] sm:w-[150px] sm:h-[46px] lg:w-[169px] lg:h-[51px]"
-                />
-                <span
-                  className="text-[29px] text-gray-300 font-inter"
-                  style={{ marginTop: "-35px" }}
-                >
-                  broadpeak
-                </span>
-              </div>
+            {/* Ruckus */}
+            <div className="flex flex-col items-center">
+              <span className="text-[18px] sm:text-[24px] lg:text-[30px] text-gray-300 font-inter font-bold">
+                RUCKUS
+              </span>
+              <span className="text-[8px] sm:text-[10px] lg:text-[12px] text-gray-400 font-inter font-bold">
+                COMMSCOPE
+              </span>
+            </div>
 
-              {/* Ruckus */}
-              <div className="flex flex-col items-center">
-                <span className="text-[18px] sm:text-[24px] lg:text-[30px] text-gray-300 font-inter font-bold">
-                  RUCKUS
-                </span>
-                <span className="text-[8px] sm:text-[10px] lg:text-[12px] text-gray-400 font-inter font-bold">
-                  COMMSCOPE
-                </span>
-              </div>
-
-              {/* Palo Alto */}
-              <div className="flex items-center gap-2 sm:gap-3">
-                <img
-                  src="https://api.builder.io/api/v1/image/assets/TEMP/77a97b67360c119135f86ac18307ea8da584fdce?width=76"
-                  alt="Palo Alto logo"
-                  className="w-6 h-5 sm:w-8 sm:h-6 lg:w-10 lg:h-7"
-                />
-                <span className="text-[18px] sm:text-[24px] lg:text-[29px] text-gray-300 font-inter font-bold">
-                  paloalto
-                </span>
-              </div>
+            {/* Palo Alto */}
+            <div className="flex items-center gap-2 sm:gap-3">
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/77a97b67360c119135f86ac18307ea8da584fdce?width=76"
+                alt="Palo Alto logo"
+                className="w-6 h-5 sm:w-8 sm:h-6 lg:w-10 lg:h-7"
+              />
+              <span className="text-[18px] sm:text-[24px] lg:text-[29px] text-gray-300 font-inter font-bold">
+                paloalto
+              </span>
             </div>
           </div>
         </div>
