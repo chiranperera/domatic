@@ -5,7 +5,7 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-cyber-dark text-white overflow-x-hidden">
       {/* Navigation Header */}
-      <nav className="relative z-50 w-full h-[89px] flex items-center justify-between px-4 sm:px-6 lg:px-[100px]">
+      <nav className="absolute top-0 left-0 right-0 z-50 w-full h-[89px] flex items-center justify-between px-4 sm:px-6 lg:px-[100px] bg-transparent">
         {/* Logo */}
         <div className="flex items-center gap-2 sm:gap-3">
           <div className="w-2 h-4 sm:h-5 bg-white"></div>
