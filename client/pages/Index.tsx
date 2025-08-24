@@ -1,9 +1,21 @@
 import { Button } from "@/components/ui/button";
 import { AnimatedCounter } from "@/components/ui/animated-counter";
+import { AuthOverlay } from "@/components/auth/AuthOverlay";
 import { useState } from "react";
 
 export default function Index() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [authOverlayOpen, setAuthOverlayOpen] = useState(false);
+  const [authMode, setAuthMode] = useState<"signin" | "signup">("signin");
+
+  const openAuthOverlay = (mode: "signin" | "signup" = "signin") => {
+    setAuthMode(mode);
+    setAuthOverlayOpen(true);
+  };
+
+  const closeAuthOverlay = () => {
+    setAuthOverlayOpen(false);
+  };
 
   return (
     <div className="min-h-screen bg-cyber-dark text-white overflow-x-hidden">
@@ -97,6 +109,7 @@ export default function Index() {
 
         {/* Sign In Button */}
         <Button
+          onClick={() => openAuthOverlay("signin")}
           className="hidden lg:block bg-white text-black h-[38px] hover:bg-gray-100 transition-colors"
           style={{
             borderRadius: "62px",
@@ -167,7 +180,10 @@ export default function Index() {
             </a>
             <Button
               className="w-full bg-gradient-to-r from-cyan-500 to-blue-500 text-white h-[44px] hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 font-semibold text-[16px] border border-cyan-400/30 shadow-lg shadow-cyan-500/20"
-              onClick={() => setMobileMenuOpen(false)}
+              onClick={() => {
+                setMobileMenuOpen(false);
+                openAuthOverlay("signin");
+              }}
             >
               Sign In
             </Button>
@@ -534,6 +550,13 @@ export default function Index() {
           </div>
         </div>
       </div>
+
+      {/* Authentication Overlay */}
+      <AuthOverlay
+        isOpen={authOverlayOpen}
+        onClose={closeAuthOverlay}
+        initialMode={authMode}
+      />
     </div>
   );
 }

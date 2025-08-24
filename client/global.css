@@ -283,3 +283,157 @@
 .sea-blue-border-glow {
   animation: seaBlueBorderGlow 2s ease-in-out infinite;
 }
+
+/* Apple Liquid Glass Effect Styles */
+.liquid-glass-container {
+  position: relative;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    0 2px 8px rgba(0, 0, 0, 0.2),
+    inset 0 1px 1px rgba(255, 255, 255, 0.1),
+    inset 0 -1px 1px rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.liquid-glass-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  z-index: 1;
+}
+
+.liquid-glass-container::after {
+  content: '';
+  position: absolute;
+  inset: 1px;
+  border-radius: 23px;
+  padding: 1px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.02),
+    rgba(255, 255, 255, 0.05)
+  );
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: subtract;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: subtract;
+}
+
+.liquid-glass-container:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 
+    0 12px 48px rgba(0, 0, 0, 0.4),
+    0 4px 12px rgba(0, 0, 0, 0.3),
+    inset 0 1px 1px rgba(255, 255, 255, 0.15),
+    inset 0 -1px 1px rgba(255, 255, 255, 0.08);
+}
+
+/* Cyber scan line effect for auth overlay */
+@keyframes cyberScanAuth {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+
+.cyber-scan-line {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    hsla(199, 89%, 48%, 0.8),
+    transparent
+  );
+  animation: cyberScanAuth 3s linear infinite;
+  z-index: 1;
+}
+
+/* Cyber grid overlay */
+@keyframes gridPulse {
+  0%, 100% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+.cyber-grid-overlay {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+  animation: gridPulse 4s ease-in-out infinite;
+  z-index: 1;
+}
+
+/* Enhanced backdrop blur for older browsers */
+@supports not (backdrop-filter: blur(20px)) {
+  .liquid-glass-container {
+    background: rgba(15, 23, 42, 0.85);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .liquid-glass-container {
+    border-radius: 20px;
+    margin: 1rem;
+  }
+  
+  .liquid-glass-container::after {
+    border-radius: 19px;
+  }
+}
+
+/* Loading state glass effect */
+.glass-loading {
+  background: rgba(255, 255, 255, 0.02);
+  animation: glassShimmer 2s linear infinite;
+}
+
+@keyframes glassShimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Success state enhancement */
+.glass-success {
+  background: rgba(34, 197, 94, 0.1);
+  border-color: rgba(34, 197, 94, 0.2);
+  box-shadow: 
+    0 8px 32px rgba(34, 197, 94, 0.2),
+    inset 0 1px 1px rgba(34, 197, 94, 0.1);
+}
