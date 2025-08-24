@@ -279,3 +279,7 @@
 .animated-glow {
   animation: glowPulse 3s ease-in-out infinite;
 }
+
+.sea-blue-border-glow {
+  animation: seaBlueBorderGlow 2s ease-in-out infinite;
+}
