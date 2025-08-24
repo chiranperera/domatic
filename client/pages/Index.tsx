@@ -92,7 +92,6 @@ export default function Index() {
         {/* Aurora Background */}
         <div className="absolute inset-0 aurora-gradient"></div>
 
-
         {/* Hero Content */}
         <div
           className="relative z-10 flex flex-col items-center text-center pt-[160px] px-6 cyber-hero-animated"
@@ -244,22 +243,30 @@ export default function Index() {
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-cyan-400 rounded-sm"></div>
                     <span>Phishing</span>
-                    <span className="ml-auto"><AnimatedCounter target={40} suffix="%" /></span>
+                    <span className="ml-auto">
+                      <AnimatedCounter target={40} suffix="%" />
+                    </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-blue-400 rounded-sm"></div>
                     <span>Malware</span>
-                    <span className="ml-auto"><AnimatedCounter target={27} suffix="%" /></span>
+                    <span className="ml-auto">
+                      <AnimatedCounter target={27} suffix="%" />
+                    </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-green-400 rounded-sm"></div>
                     <span>Intrusion</span>
-                    <span className="ml-auto"><AnimatedCounter target={18} suffix="%" /></span>
+                    <span className="ml-auto">
+                      <AnimatedCounter target={18} suffix="%" />
+                    </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-purple-400 rounded-sm"></div>
                     <span>Other</span>
-                    <span className="ml-auto"><AnimatedCounter target={18} suffix="%" /></span>
+                    <span className="ml-auto">
+                      <AnimatedCounter target={18} suffix="%" />
+                    </span>
                   </div>
                 </div>
               </div>
@@ -309,17 +316,23 @@ export default function Index() {
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-cyan-400 rounded-sm"></div>
                     <span>Phishing</span>
-                    <span className="ml-auto"><AnimatedCounter target={40} suffix="%" /></span>
+                    <span className="ml-auto">
+                      <AnimatedCounter target={40} suffix="%" />
+                    </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-blue-400 rounded-sm"></div>
                     <span>Intrusion</span>
-                    <span className="ml-auto"><AnimatedCounter target={18} suffix="%" /></span>
+                    <span className="ml-auto">
+                      <AnimatedCounter target={18} suffix="%" />
+                    </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-purple-400 rounded-sm"></div>
                     <span>Other</span>
-                    <span className="ml-auto"><AnimatedCounter target={13} suffix="%" /></span>
+                    <span className="ml-auto">
+                      <AnimatedCounter target={13} suffix="%" />
+                    </span>
                   </div>
                 </div>
               </div>
@@ -343,17 +356,17 @@ export default function Index() {
             </div>
           </div>
         </div>
-
       </div>
 
       {/* Trusted By Section */}
       <div
         className="w-full pb-[100px] -mt-px relative"
         style={{
-          backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2Ff16ee0a559e542848f50f86238f3368e%2F5402c346daf04fd281952ed1445336b5?format=webp&width=800)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
+          backgroundImage:
+            "url(https://cdn.builder.io/api/v1/image/assets%2Ff16ee0a559e542848f50f86238f3368e%2F5402c346daf04fd281952ed1445336b5?format=webp&width=800)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
       >
         <div className="w-full text-center -mt-[111px] pt-16 px-4">
