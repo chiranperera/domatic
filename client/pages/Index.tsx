@@ -156,7 +156,7 @@ export default function Index() {
               <img
                 src="https://api.builder.io/api/v1/image/assets/TEMP/b21fcdd6ef336cc07e948e9cb62a44de738ba8f1?width=78"
                 alt="Play button"
-                className="w-10 h-10 rounded-full ml-auto animated-glow"
+                className="w-10 h-10 rounded-full ml-auto animated-glow sea-blue-border-glow"
               />
               <span
                 className="text-white font-medium text-left"
