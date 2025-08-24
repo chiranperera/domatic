@@ -21,9 +21,16 @@
     "typecheck": "tsc"
   },
   "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.1",
     "dotenv": "^17.2.1",
     "express": "^5.1.0",
-    "zod": "^3.25.76"
+    "zod": "^3.25.76",
+    "tailwind-merge": "^2.6.0",
+    "clsx": "^2.1.1",
+    "class-variance-authority": "^0.7.1",
+    "lucide-react": "^0.539.0"
   },
   "devDependencies": {
     "@hookform/resolvers": "^5.2.1",
@@ -80,16 +87,12 @@
     "next-themes": "^0.4.6",
     "postcss": "^8.5.6",
     "prettier": "^3.6.2",
-    "react": "^18.3.1",
     "react-day-picker": "^9.8.1",
-    "react-dom": "^18.3.1",
     "react-hook-form": "^7.62.0",
     "react-resizable-panels": "^3.0.4",
-    "react-router-dom": "^6.30.1",
     "recharts": "^2.12.7",
     "serverless-http": "^3.2.0",
     "sonner": "^1.7.4",
-    "tailwind-merge": "^2.6.0",
     "tailwindcss": "^3.4.17",
     "tailwindcss-animate": "^1.0.7",
     "three": "^0.176.0",
